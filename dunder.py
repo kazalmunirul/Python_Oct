@@ -9,7 +9,7 @@ def add(a, b):
 
 # This block only runs if my_helper_functions.py is executed directly
 if __name__ == "__main__":
- print("my_helper_functions.py is being run directly!")
+ print("dunder.py is being run directly!")
  user_name = input("Enter your name: ")
  print(greet(user_name))
  result = add(10, 5)
