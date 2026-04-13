@@ -13,10 +13,19 @@ app = Flask(__name__)
 def home():
  # This function is called a "view function".
  # It must return the response that will be sent back to the client.
- return "Welcome to my first Flask app!"
+ return "Welcome to my Home page! \n"
+ 
+@app.route('/aboutus')
+def aboutus():
+     return "Welcome to the about us page\n"
+
+@app.route('/faq')
+def faq():
+     return "Welcome to the FAQ page\n"
 
 # 3. Run the Flask development server
 if __name__ == '__main__':
  # debug=True is very useful during development because:
  # - The server will automatically reload if you change your code.
  # - It provides a helpful debugger in the browser if an error occurs.
+ app.run(debug=True)
